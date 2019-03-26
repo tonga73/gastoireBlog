@@ -18,11 +18,15 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
-        <h1>{post.frontmatter.title}</h1>
+        <h1 style={{
+          color: `rgb(164,86,78)`,
+        }}>{post.frontmatter.title}</h1>
         <p
           style={{
             ...scale(-1 / 5),
             display: `block`,
+            textAlign: `right`,
+            borderBottom: `1px solid #f2f2f2`,
             marginBottom: rhythm(1),
             marginTop: rhythm(-1),
           }}
@@ -82,7 +86,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "DD / MM / YYYY")
         description
       }
     }

@@ -1,0 +1,7 @@
+body {
+    background: #333;
+}
+
+a.postListTitle:hover {
+    color: #f1948a !important;
+}

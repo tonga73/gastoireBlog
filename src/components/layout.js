@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import "./layout.css";
 
 import { rhythm, scale } from "../utils/typography"
 
@@ -22,7 +23,7 @@ class Layout extends React.Component {
             style={{
               boxShadow: `none`,
               textDecoration: `none`,
-              color: `inherit`,
+              color: `rgb(241,148,138)`,
             }}
             to={`/`}
           >
@@ -42,7 +43,7 @@ class Layout extends React.Component {
             style={{
               boxShadow: `none`,
               textDecoration: `none`,
-              color: `inherit`,
+              color: `rgb(241,148,138)`,
             }}
             to={`/`}
           >
@@ -54,6 +55,8 @@ class Layout extends React.Component {
     return (
       <div
         style={{
+          backgroundColor: `inherit`,
+          color: `whitesmoke`,
           marginLeft: `auto`,
           marginRight: `auto`,
           maxWidth: rhythm(24),
@@ -65,7 +68,12 @@ class Layout extends React.Component {
         <footer>
           © {new Date().getFullYear()}, Hecho con 
           {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <a 
+            style={{
+              color: `rgba(242,242,242,0.7)`
+            }} 
+            href="https://www.gatsbyjs.org">Gatsby
+          </a>
         </footer>
       </div>
     )

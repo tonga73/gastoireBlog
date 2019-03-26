@@ -40,8 +40,8 @@ function Bio() {
             <p>
               Realizado por <strong>{author}</strong>.
               {` `}
-              <a href={`https://twitter.com/${social.twitter}`}>
-                You should follow him on Twitter
+              <a style={{ color: `rgb(164,86,78)`, }} href={`https://twitter.com/${social.twitter}`}>
+                Twitter
               </a>
             </p>
           </div>
