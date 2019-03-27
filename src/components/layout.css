@@ -1,7 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700|Source+Code+Pro:200,400,500,700');
+
+html {
+    background-color: #333;
+}
+
 body {
-    background: #333;
+    background-image: url('https://www.transparenttextures.com/patterns/black-linen.png');
+}
+
+header.navigation {
+    text-align: right;
+}
+
+header.navigation a {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 100;
+    letter-spacing: 5px;
 }
 
 a.postListTitle:hover {
     color: #f1948a !important;
+}
+
+.post-nav li a {
+    color: #f1948a;
+    border: none;
+    padding: 0.3em 0.5em;
+    border-radius: 7px;
+}
+
+.post-nav li a:hover {
+    background-color: #f1948a;
+    color: #333;
+    font-weight: bold;
+    transition: background-color 0.5s ease-in-out;
+}
+
+
+blockquote {
+    border-color: #DBF373;
+    color: inherit;
 }

@@ -19,6 +19,8 @@ class BlogPostTemplate extends React.Component {
           description={post.frontmatter.description || post.excerpt}
         />
         <h1 style={{
+          fontFamily: `Josefin Sans, sans-serif`,
+          fontWeight: 400,
           color: `rgb(164,86,78)`,
         }}>{post.frontmatter.title}</h1>
         <p
@@ -42,6 +44,7 @@ class BlogPostTemplate extends React.Component {
         <Bio />
 
         <ul
+          className="post-nav"
           style={{
             display: `flex`,
             flexWrap: `wrap`,

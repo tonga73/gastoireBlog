@@ -21,29 +21,35 @@ function Bio() {
           <div
             style={{
               display: `flex`,
+              justifyContent: `flex-end`,
+              alignItems: `center`,
               marginBottom: rhythm(2.5),
             }}
           >
-            <Image
-              fixed={data.avatar.childImageSharp.fixed}
-              alt={author}
+            <p
               style={{
-                marginRight: rhythm(1 / 2),
-                marginBottom: 0,
-                minWidth: 50,
-                borderRadius: `100%`,
+                margin: 0,
               }}
-              imgStyle={{
-                borderRadius: `50%`,
-              }}
-            />
-            <p>
+            >
               Realizado por <strong>{author}</strong>.
               {` `}
               <a style={{ color: `rgb(164,86,78)`, }} href={`https://twitter.com/${social.twitter}`}>
                 Twitter
               </a>
             </p>
+            <Image
+              fixed={data.avatar.childImageSharp.fixed}
+              alt={author}
+              style={{
+                marginLeft: rhythm(1 / 2),
+                marginBottom: 0,
+                minWidth: 50,
+                borderRadius: `7%`,
+              }}
+              imgStyle={{
+                borderRadius: `7%`,
+              }}
+            />
           </div>
         )
       }}
