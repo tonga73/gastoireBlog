@@ -72,30 +72,39 @@ class Layout extends React.Component {
         <footer
           style={{
             display: `flex`,
-            position: `fixed`,
-            width: `100%`,
+            flexDirection: `column`,
             backgroundColor: `#333`,
             color: `#f1948a`,
+            textAlign: `center`,
             bottom: 0,
             justifyContent: `space-around`,
             alignItems: `center`,
             fontFamily: `Josefin Sans, sans-serif`,
           }}
         >
-          gastoire © {new Date().getFullYear()} 
+          gastoire © {new Date().getFullYear()} <i style={{ color: `rgba(242,242,242,0.3)`, }}>con</i>
           {` `}
-          <a
-            className="footer-link" 
-            href="https://www.linux.org">Linux
-          </a>
-          <a
-            className="footer-link" 
-            href="https://www.gatsbyjs.org">Gatsby
-          </a>
-          <a
-            className="footer-link" 
-            href="https://www.netlify.com">Netlify
-          </a>
+          <nav
+            style={{ 
+              display: `flex`,
+              marginTop: `7px`,
+              justifyContent: `space-around`,
+              width: `100%`,  
+            }}
+          >
+            <a
+              className="footer-link" 
+              href="https://www.linux.org">Linux
+            </a>
+            <a
+              className="footer-link" 
+              href="https://www.gatsbyjs.org">Gatsby
+            </a>
+            <a
+              className="footer-link" 
+              href="https://www.netlify.com">Netlify
+            </a>
+          </nav>
         </footer>
       </div>
     )
