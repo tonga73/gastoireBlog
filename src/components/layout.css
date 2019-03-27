@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700|Source+Code+Pro:200,400,500,700');
 
-html {
-    background-color: #333;
+* {
+    color: #f2f2f2;
 }
 
-body {
-    background-image: url('https://www.transparenttextures.com/patterns/black-linen.png');
+html {
+    background-color: #333;
 }
 
 header.navigation {
@@ -38,6 +38,10 @@ a.postListTitle:hover {
 
 
 blockquote {
-    border-color: #DBF373;
+    border-color: #e5f3a4;
     color: inherit;
+}
+
+footer .footer-link {
+    color: #e5f3a4;
 }

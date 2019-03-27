@@ -11,6 +11,12 @@ import Image from "gatsby-image"
 
 import { rhythm } from "../utils/typography"
 
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+
+library.add(fab)
+
 function Bio() {
   return (
     <StaticQuery
@@ -33,8 +39,8 @@ function Bio() {
             >
               Realizado por <strong>{author}</strong>.
               {` `}
-              <a style={{ color: `rgb(164,86,78)`, }} href={`https://twitter.com/${social.twitter}`}>
-                Twitter
+              <a style={{ color: `#f1948a`, }} href={`https://twitter.com/${social.twitter}`}>
+                <FontAwesomeIcon className="social-icon" icon={['fab', 'twitter']} />
               </a>
             </p>
             <Image

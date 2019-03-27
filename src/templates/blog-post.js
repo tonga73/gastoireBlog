@@ -26,9 +26,9 @@ class BlogPostTemplate extends React.Component {
         <p
           style={{
             ...scale(-1 / 5),
-            display: `block`,
             textAlign: `right`,
-            borderBottom: `1px solid #f2f2f2`,
+            color: `rgba(242,242,242,0.7)`,
+            borderBottom: `3px solid rgba(242,242,242,0.7)`,
             marginBottom: rhythm(1),
             marginTop: rhythm(-1),
           }}

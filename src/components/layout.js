@@ -60,7 +60,7 @@ class Layout extends React.Component {
           marginLeft: `auto`,
           marginRight: `auto`,
           maxWidth: rhythm(24),
-          padding: `${rhythm(0.1)} ${rhythm(3 / 4)}`,
+          padding: `${rhythm(1.5)} ${rhythm(4 / 4)}`,
         }}
       >
         <header className="navigation">{header}</header>
@@ -69,14 +69,32 @@ class Layout extends React.Component {
             fontFamily: 'Code Source Pro, monospace',
           }}
         >{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Hecho con 
+        <footer
+          style={{
+            display: `flex`,
+            position: `fixed`,
+            width: `100%`,
+            backgroundColor: `#333`,
+            color: `#f1948a`,
+            bottom: 0,
+            justifyContent: `space-around`,
+            alignItems: `center`,
+            fontFamily: `Josefin Sans, sans-serif`,
+          }}
+        >
+          gastoire © {new Date().getFullYear()} 
           {` `}
-          <a 
-            style={{
-              color: `rgba(242,242,242,0.7)`
-            }} 
+          <a
+            className="footer-link" 
+            href="https://www.linux.org">Linux
+          </a>
+          <a
+            className="footer-link" 
             href="https://www.gatsbyjs.org">Gatsby
+          </a>
+          <a
+            className="footer-link" 
+            href="https://www.netlify.com">Netlify
           </a>
         </footer>
       </div>
