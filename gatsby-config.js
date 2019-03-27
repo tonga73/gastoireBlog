@@ -1,14 +1,15 @@
 module.exports = {
   siteMetadata: {
-    title: `gastoire BLOG`,
+    title: `gastoire`,
     author: `Gastón Mitoire`,
-    description: `Un blog, bo. No se que querés que te explique.`,
+    description: `empowering ideas`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
     social: {
       twitter: `gastoireTweets`,
     },
   },
   plugins: [
+    `gatsby-plugin-netlify-cms`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
